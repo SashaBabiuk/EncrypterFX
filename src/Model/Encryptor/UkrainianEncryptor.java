@@ -1,8 +1,9 @@
 package Model.Encryptor;
 
+import static Model.Constants.UKRAINIAN_ALPHABET;
+
 public class UkrainianEncryptor extends BaseEncryptor {
-    private static final String UKRAINIAN_ALPHABET = "АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя.,«»\"':!? ";
     public UkrainianEncryptor() {
-        super(UKRAINIAN_ALPHABET);
+        super(UKRAINIAN_ALPHABET.getText());
     }
 }

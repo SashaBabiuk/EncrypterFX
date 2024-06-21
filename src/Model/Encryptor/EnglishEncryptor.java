@@ -1,11 +1,11 @@
 package Model.Encryptor;
 
+import static Model.Constants.ENGLISH_ALPHABET;
+
 public class EnglishEncryptor extends BaseEncryptor {
 
-    private static final String ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,«»\"':!? ";
-
     public EnglishEncryptor() {
-        super(ENGLISH_ALPHABET);
+        super(ENGLISH_ALPHABET.getText());
     }
 
 }
