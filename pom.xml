@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <release>23</release> <!-- Вказано JDK 23 -->
+        <release>23</release>
         <maven.compiler.source>23</maven.compiler.source> <!-- Вказано версію компілятора для JDK 23 -->
         <maven.compiler.target>23</maven.compiler.target> <!-- Вказано таргет для JDK 23 -->
     </properties>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.10.0</version>
+            <version>5.12.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -30,10 +30,16 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.10.0</version>
+            <version>5.12.0</version>
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.12.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- JavaFX Base -->
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -95,15 +101,6 @@
                 </configuration>
             </plugin>
 
-<!--            &lt;!&ndash; Плагін для роботи з JavaFX &ndash;&gt;-->
-<!--            <plugin>-->
-<!--                <groupId>org.openjfx</groupId>-->
-<!--                <artifactId>javafx-maven-plugin</artifactId>-->
-<!--                <version>0.0.8</version>-->
-<!--                <configuration>-->
-<!--                    <mainClass>org.encrypter.Encryptor</mainClass>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 
