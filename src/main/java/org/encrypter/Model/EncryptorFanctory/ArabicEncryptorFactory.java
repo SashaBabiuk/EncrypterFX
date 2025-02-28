@@ -1,7 +1,7 @@
-package Model.EncryptorFanctory;
+package org.encrypter.Model.EncryptorFanctory;
 
-import Model.Encryptor.ArabicEncryptor;
-import Model.Encryptor.Encryptor;
+import org.encrypter.Model.Encryptor.ArabicEncryptor;
+import org.encrypter.Model.Encryptor.Encryptor;
 
 public class ArabicEncryptorFactory implements EncryptorFactory{
     @Override
